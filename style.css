@@ -217,3 +217,100 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }
+
+  /* ========================= */
+/* SEÇÃO PRESENTE / PIX */
+/* ========================= */
+
+.gift-section {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #faf9f7;
+}
+
+.gift-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.gift-text {
+  max-width: 600px;
+  margin: 0 auto 50px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.pix-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.pix-image {
+  width: 240px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.pix-subtitle {
+  font-size: 0.95rem;
+  color: #777;
+}
+
+#pixCode {
+  width: 100%;
+  max-width: 520px;
+  height: 100px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid #ddd;
+  resize: none;
+  font-size: 0.85rem;
+  background-color: white;
+}
+
+.copy-btn {
+  background-color: #c8a97e;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+  background-color: #b89668;
+  transform: translateY(-2px);
+}
+
+.feedback {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
+@media (max-width: 600px) {
+  .pix-image {
+    width: 200px;
+  }
+
+  #pixCode {
+    height: 110px;
+    font-size: 0.8rem;
+  }
+
+  .gift-text {
+    font-size: 1rem;
+  }
+}

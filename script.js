@@ -15,3 +15,29 @@ const countdown = setInterval(function() {
     document.getElementById("countdown").innerHTML = "É hoje 🤍";
   }
 }, 1000);
+
+// =========================
+// FUNÇÃO COPIAR PIX
+// =========================
+
+function copiarPix() {
+  const pixCode = document.getElementById("pixCode");
+  const feedback = document.getElementById("copyFeedback");
+  const button = document.getElementById("copyButton");
+
+  if (!pixCode) return;
+
+  navigator.clipboard.writeText(pixCode.value)
+    .then(() => {
+      feedback.classList.remove("hidden");
+      button.innerText = "Copiado! ✅";
+
+      setTimeout(() => {
+        feedback.classList.add("hidden");
+        button.innerText = "Copiar código Pix";
+      }, 3000);
+    })
+    .catch(() => {
+      alert("Não foi possível copiar automaticamente. Copie manualmente.");
+    });
+}
