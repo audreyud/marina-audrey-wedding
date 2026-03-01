@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5efe8;
+    font-family: 'Montserrat', sans-serif;
+    color: #3a3a3a;
+    line-height: 1.6;
+  }
+  
+  .hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url('floral.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 220px;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+  }
+  
+  .date {
+    margin-top: 10px;
+    letter-spacing: 3px;
+  }
+  
+  .location {
+    margin-top: 5px;
+    font-size: 0.9rem;
+  }
+  
+  #countdown {
+    margin-top: 20px;
+    font-size: 1rem;
+    letter-spacing: 2px;
+  }
+  
+  .section {
+    padding: 60px 25px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    background-color: #efe6dd;
+  }
+  
+  .button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #b36b4c;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .button:hover {
+    opacity: 0.85;
+  }
+  
+  .map-container {
+    margin-top: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .gallery {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-top: 20px;
+  }
+  
+  .polaroid {
+    background: white;
+    padding: 10px;
+    width: 180px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    flex-shrink: 0;
+    transform: rotate(-2deg);
+  }
+  
+  .polaroid:nth-child(2) {
+    transform: rotate(2deg);
+  }
+
+  .polaroid:nth-child(3) {
+    transform: rotate(-3deg);
+  }
+  
+  .polaroid:nth-child(4) {
+    transform: rotate(3deg);
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .polaroid span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+  }
+  
+  .qrcode img {
+    width: 170px;
+    margin-top: 20px;
+  }
+  
+  footer {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .signature {
+    font-family: 'Allura', cursive;
+    font-size: 2rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .polaroid {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transform: rotate(-2deg);
+  }
+  
+  .polaroid:nth-child(2) {
+    transform: rotate(2deg);
+  }
+  
+  .polaroid:nth-child(3) {
+    transform: rotate(-3deg);
+  }
+  
+  .polaroid:nth-child(4) {
+    transform: rotate(3deg);
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .polaroid span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .polaroid {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+    transform: rotate(-2deg);
+  }
+  
+  .polaroid:nth-child(2) {
+    transform: rotate(2deg);
+  }
+  
+  .polaroid:nth-child(3) {
+    transform: rotate(-3deg);
+  }
+  
+  .polaroid:nth-child(4) {
+    transform: rotate(3deg);
+  }
+  
+  .polaroid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .polaroid span {
+    display: block;
+    margin-top: 8px;
+    font-size: 0.8rem;
+  }
+
+  @media (min-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
