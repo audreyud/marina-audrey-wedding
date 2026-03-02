@@ -17,7 +17,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-image: url('floral.png');
     background-repeat: no-repeat;
     background-position: left center;
     background-size: 220px;
@@ -313,4 +312,16 @@
   .gift-text {
     font-size: 1rem;
   }
+}
+
+/* ========================= */
+/* FLORAL ABAIXO DO CONTADOR */
+/* ========================= */
+
+.hero-floral {
+  margin-top: 30px;
+  width: 80%;
+  max-width: 450px;
+  opacity: 0.85;
+  align-content: center;
 }
