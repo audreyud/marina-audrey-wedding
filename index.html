@@ -1,116 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Marina e Audrey</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marina & Audrey</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Montserrat:wght@300;400;500&family=Allura&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Marina e Audrey</h1>
-      <p class="date">20 • 04 • 26 | 19H</p>
-      <p class="location">Brasília - DF</p>
+  <!-- INÍCIO -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1>Marina & Audrey</h1>
+      <p class="date">20.04.2026 | 19h</p>
+  
       <!-- CONTADOR -->
       <div id="countdown" class="countdown">
-        <div><span id="days">00</span><small>Dias</small></div>
-        <div><span id="hours">00</span><small>Horas</small></div>
-        <div><span id="minutes">00</span><small>Min</small></div>
-        <div><span id="seconds">00</span><small>Seg</small></div>
+        <div><span id="days">0</span><small>dias</small></div>
+        <div><span id="hours">0</span><small>horas</small></div>
+        <div><span id="minutes">0</span><small>min</small></div>
+        <div><span id="seconds">0</span><small>seg</small></div>
       </div>
-      <!-- FLORAL ABAIXO DO CONTADOR -->
-      <img src="floral.png" alt="Decoração floral" class="hero-floral">
+  
+      <p>Brasília - DF</p>
     </div>
- 
+  </header>
+
+  <!-- CERIMÔNIA -->
+  <section class="section">
+    <h2 class="section-title">Cerimônia & Jantar</h2>
+  
+    <p>
+      A cerimônia e a celebração acontecerão no Restaurante Almería.
+    </p>
+  
+    <!-- MAPA -->
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps?q=Restaurante+Almería+Brasília&output=embed"
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  
+    <div class="buttons">
+      <a class="button" 
+         href="https://maps.app.goo.gl/Wa8Y4xMiaUKtcMw87" 
+         target="_blank">
+         Como chegar
+      </a>
+  
+      <a class="button" 
+         href="https://restaurantealmeria.com.br/" 
+         target="_blank">
+         Visitar restaurante
+      </a>
+    </div>
   </section>
 
-<section class="section highlight">
-  <h2>Cerimônia & Jantar</h2>
-  <p><strong>Data:</strong> 20 de Abril de 2026</p>
-  <p><strong>Horário:</strong> 19h</p>
-  <p><strong>Local:</strong> Restaurante Almería</p>
-  <p>Brasília – DF</p>
+  <!-- CAIXINHA DOS SONHOS -->
+  <section class="section dreams">
+    <h2 class="section-title">Caixinha dos Sonhos</h2>
 
-  <div class="map-container">
-    <iframe
-      src="https://www.google.com/maps?q=Restaurante+Almeria+Brasilia&output=embed"
-      width="100%"
-      height="250"
-      style="border:0;"
-      loading="lazy"
-      allowfullscreen>
-    </iframe>
-  </div>
+    <p>
+      Já temos muitas coisas, mas nos nossos sonhos sempre cabem mais.<br>
+      Se quiser contribuir com eles, pode usar o Pix abaixo.
+    </p>
 
-  <a class="button" href="https://maps.app.goo.gl/sXHsPQ1BXKrXzvV59" target="_blank">
-    Como chegar
-  </a>
-</section>
-
-<section class="gift-section">
-  <h2>Caixinha dos sonhos</h2>
-
-  <p class="gift-text">
-    Já temos muitas coisas, mas nos nossos sonhos sempre cabem mais.<br>
-    Se quiser contribuir com eles, pode usar o Pix abaixo.
-  </p>
-
-  <div class="pix-container">
-    <img src="qrcode-pix-2.jpeg" alt="QR Code Pix" class="pix-image">
-
-    <p class="pix-subtitle">Ou utilize o código Pix Copia e Cola:</p>
-
-    <textarea id="pixCode" readonly>
+    <div class="pix-box">
+      <img src="qrcode-pix-2.jpeg" alt="QR Code Pix Marina e Audrey" class="qrcode">
+    
+      <div class="pix-code" id="pixCode">
 00020126870014br.gov.bcb.pix01363b5d9e49-3861-4ba5-a6c0-1eff733ca8790225casamento marina e audrey5204000053039865802BR5925AUDREY CARVALHO DOS SANTO6008BRASILIA62070503***63047CAD
-    </textarea>
-
-    <button class="copy-btn" onclick="copiarPix()" id="copyButton">
-      Copiar código Pix
-    </button>
-
-    <span id="copyFeedback" class="feedback hidden">
-      ✅ Código copiado!
-    </span>
-  </div>
-</section>
-
-<section class="section">
-    <h2>Memórias</h2>
-    <div class="gallery-grid">
-  
-      <div class="polaroid">
-        <img src="foto1.jpg" alt="Nosso começo">
-        <span>Nosso começo</span>
       </div>
-  
-      <div class="polaroid">
-        <img src="foto2.jpg" alt="Brasília, nosso lar">
-        <span>Brasília, nosso lar</span>
-      </div>
-  
-      <div class="polaroid">
-        <img src="foto3.jpg" alt="Nosso rolê">
-        <span>Chapada, nosso rolê</span>
-      </div>
-  
-      <div class="polaroid">
-        <img src="familia.jpg" alt="Nossa família">
-        <span>Nossa família</span>
-      </div>
-  
+    
+      <button class="button" id="copyPixBtn">
+        Copiar chave Pix
+      </button>
     </div>
   </section>
 
-<footer>
-  <p class="signature">Save the Date</p>
-</footer>
+  <!-- MEMÓRIAS -->
+  <section class="section memories">
+    <h2 class="section-title">Memórias</h2>
 
-<script src="script.js"></script>
+    <div class="gallery">
+      <div class="polaroid">
+        <img src="foto1.jpg" alt="Foto do casal">
+      </div>
+
+      <div class="polaroid">
+        <img src="foto2.jpg" alt="Foto do casal">
+      </div>
+
+      <div class="polaroid">
+        <img src="foto5.jpg" alt="Foto do casal">
+      </div>      
+      
+      <div class="polaroid">
+        <img src="foto3.jpg" alt="Foto do casal">
+      </div>
+
+      <div class="polaroid">
+        <img src="foto4.jpg" alt="Foto do casal">
+      </div>      
+    </div>
+  </section>
+
+  <footer>
+    Com carinho, Marina & Audrey 🤍
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
